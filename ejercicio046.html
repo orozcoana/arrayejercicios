@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var playlist = ['Smells Like Teen Spirit', 'Everlong', 'Come As You Are', 'The Pretender', 'Heart-Shaped Box', 'Learn to Fly', 'Lithium'];
+var playlistEscuchada = ['The Pretender', 'Lithium', 'Come As You Are'];
+
+
+var playlistSinEscuchar = playlist.filter(function(song) {
+    return playlistEscuchada.indexOf(song) == -1;
+      });
+
+console.log(playlistSinEscuchar);
+    </script>
+</body>
+</html>

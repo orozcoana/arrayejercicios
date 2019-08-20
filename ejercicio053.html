@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var masNumeros = [43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32];
+           
+            var numerosImpares = masNumeros.reduce(function(acumulados, numero) {
+                if (numero % 2 != 0) {
+                    acumulados.push(numero);
+                }
+                return acumulados;
+            }, []);
+            console.log('impares: ', numerosImpares);
+  
+    </script>
+</body>
+</html>

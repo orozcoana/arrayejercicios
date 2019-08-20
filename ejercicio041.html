@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var productos = ['celular', 'notebook', 'monitor'];
+            var costos = [12.5, 56, 98];
+            var agregarIVA = function(costo) {
+                return costo * 1.21;
+            };
+            var sumarGanancia = function(costo) {
+                return costo * 1.5;
+            };
+            // codear acá la solución del ejercicio
+            var preciosFinales = costos.map(function(costo, indice) {
+                return `${productos[indice]}  ${agregarIVA(sumarGanancia(costo))}`;
+            });
+            console.log(preciosFinales);
+        
+        </script>
+</body>
+</html>
